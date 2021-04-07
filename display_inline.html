@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			span.a {
+			display: inline; /* the default for span */
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+			}
+			
+			span.b {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+			}
+			
+			span.c {
+			display: block;
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+			}
+			.nav {
+			  background-color: yellow; 
+			  list-style-type: none;
+			  text-align: center;
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			.nav li {
+			  display: inline-block;
+			  font-size: 20px;
+			  padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 与 display: inline 相比，主要区别在于 display: inline-block 允许在元素上设置宽度和高度。
+同样，如果设置了 display: inline-block，将保留上下外边距/内边距，而 display: inline 则不会。
+与 display: block 相比，主要区别在于 display：inline-block 在元素之后不添加换行符，因此该元素可以位于其他元素旁边 -->
+
+		<h1>display 属性</h1>
+
+		<h2>display: inline</h2>
+		<div>Shanghai is one of the four direct-administered municipalities of <span class="a">the People's Republic of
+				China</span>. Welcome to <span class="a">Shanghai</span>!</div>
+
+		<h2>display: inline-block</h2>
+		<div>Shanghai is one of the four direct-administered municipalities of <span class="b">the People's Republic of
+				China</span>. Welcome to <span class="b">Shanghai</span>!</div>
+
+		<h2>display: block</h2>
+		<div>Shanghai is one of the four direct-administered municipalities of <span class="c">the People's Republic of
+				China</span>. Welcome to <span class="c">Shanghai</span>!</div>
+	<!-- display 的一种常见用法：inline-block 用于水平而不是垂直地显示列表项。下例创建了一个水平导航链接 -->
+	<h1>水平导航链接</h1>
+	
+	<p>默认地，列表项是垂直显示的。在本例中，我们使用 display: inline-block 来水平地显示它们（并排）。</p>
+	<p>注释：如果您调整浏览器的大小，链接会在变得拥挤时自动换行。</p>
+	
+	<ul class="nav">
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#about">About Us</a></li>
+	  <li><a href="#clients">Our Clients</a></li>  
+	  <li><a href="#contact">Contact Us</a></li>
+	</ul>
+
+	
+	</body>
+</html>
