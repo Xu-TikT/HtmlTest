@@ -18,7 +18,7 @@
 
 		<div class="container">
 			<!-- id选择器的优先级比类选择器高 -->
-			<div  class="line" id = "line">
+			<div class="line" id="line">
 				<img src="./img/dn-36.png" />
 			</div>
 			<div class="row">
@@ -39,6 +39,88 @@
 				</div>
 			</div>
 		</div>
+		<!-- Bootstrap格栅系统实例 -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">.col-md-8</div>
+				<div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">.col-md-6</div>
+				<div class="col-md-6">.col-md-6</div>
+			</div>
+			<!-- 移动设备和PC -->
+			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+			<div class="row">
+				<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+				<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			</div>
 
+			<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+			<div class="row">
+				<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+				<div class="col-xs-3 col-md-4">.col-xs-3 .col-md-4</div>
+				<div class="col-xs-3 col-md-4">.col-xs-3 .col-md-4</div>
+			</div>
+
+			<!-- Columns are always 50% wide, on mobile and desktop -->
+			<div class="row">
+				<div class="col-xs-6">.col-xs-6</div>
+				<div class="col-xs-6">.col-xs-6</div>
+			</div>
+			<!-- 手机、平板、桌面 -->
+			<div class="row">
+			  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+			  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+			  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+			  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+			  <div class="clearfix visible-xs-block"></div>
+			  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+			</div>
+			<!-- 响应式列重置 在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 .clearfix -->
+			<div class="row">
+			  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone for an example.</div>
+			  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+			
+			  <!-- Add the extra clearfix for only the required viewport -->
+			  <div class="clearfix visible-xs-block"></div>
+			
+			  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+			  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+			</div>
+			<!-- 除了列在分界点清除响应， 您可能需要 重置偏移, 后推或前拉某个列。 -->
+			<!-- .col-md-offset-* 类可以将列向右侧偏移 -->
+			<div class="row">
+			  <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+			  <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+			</div>
+			
+			<div class="row">
+			  <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+			  <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+			</div>
+		</div>
 	</body>
 </html>
