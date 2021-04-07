@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+.city {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 300px;
+height: 300px;
+border: 1px dotted black;
+} 
+
+strong{
+	color: red;
+}
+h2{
+	color:red;
+}
+/* css的派生写法 只会改变标签中的具体元素 */
+h2 strong{
+	color: blue;
+}
+
+/* id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式， 以#号定义*/
+/* id 属性只能在每个 HTML 文档中出现一次 */
+#red{color: red;}
+#green{color: green;}
+
+/* 在现代布局中，id 选择器常常用于建立派生选择器。 */
+/* 样式只会应用于出现在 id 是 sidebar 的元素内的段落。 */
+#sidebar p{
+	font-style: italic;
+	text-align: right;
+	margin-top: 0.5em;
+}
+
+/* 在 CSS 中，类选择器以一个点号显示： */
+/* 类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。 */
+.center{text-align: center;}
+
+/* 和 id 一样，class 也可被用作派生选择器 */
+.fancy td{
+	color: #f60;
+	background: #666;
+}
+/* 元素也可以基于它们的类而被选择： */
+/* 类名为 fancy 的表格单元将是带有灰色背景的橙色 */
+td.fancy1{
+	color: #5f0;
+	background: #666;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>W3School Demo</h1>
+<h2>Resize this responsive page!</h2>
+<br>
+
+<div class="city" id="sidebar">
+<h2><strong>London</strong></h2>
+<p id="red">London is the capital city of England.</p>
+<p id="green">It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div class="city">
+<h2 class="center">Paris</h2>
+<p>Paris is the capital and most populous city of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.</p>
+</div>
+
+<div class="city fancy">
+<h2>td</h2>
+<table border="1">
+<tr>
+<td >test1</td>
+<td class="fancy1" >test2</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.line{
+	margin: 10rem;
+	color: #ccc;
+	border-bottom: 2px solid red;
+}
+
+#line{
+	margin: 0rem;
+	color: #ccc;
+	border-bottom: 2px solid yellow;
+}
