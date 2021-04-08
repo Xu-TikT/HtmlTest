@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对齐</title>
+		<style>
+			.center {
+			  margin: auto;
+			  width: 60%;
+			  border: 3px solid #73AD21;
+			  padding: 10px;
+			  text-align: center;
+			}
+			img {
+			  display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+			.right {
+			  position: absolute;
+			  /* right为0，即对右边距为0，元素靠右，如果同时有left:0px，则元素会靠左 */
+			  right: 0px;
+			  /* left: 0px; */
+			  width: 300px;
+			  border: 3px solid #73AD21;
+			  padding: 10px;
+			}
+			.left {
+			  float: left;
+			  width: 300px;
+			  border: 3px solid #73AD21;
+			  padding: 10px;
+			}
+			.sdiv {
+			  border: 3px solid #4CAF50;
+			  padding: 5px;
+			}
+			
+			.img1 {
+			  float: right;
+			}
+			
+			.clearfix {
+			  overflow: auto;
+			}
+			.padding_center {
+			  padding: 70px 0;
+			  border: 3px solid green;
+			}
+			.padding_center2 {
+			  padding: 70px 0;
+			  border: 3px solid green;
+			  text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 要使块元素（例如 <div> ）水平居中，请使用 margin: auto;。 -->
+		<h1>居中对齐元素</h1>
+		<p>设置元素的宽度将防止其延伸到容器的边缘</p>
+		<p>要使块元素（例如 div）水平居中，请使用 margin: auto;如果未设置 width 属性（或将其设置为 100％），则居中对齐无效</p>
+		<p>如果仅需在元素内居中文本，请使用 text-align: center;：</p>
+		<div class="center">
+		  <p>Hello World!</p>
+		</div>
+		
+		<h1>居中对齐图像</h1>
+		<p>如需居中图像，请将左右外边距设置为 auto，并将其设置为块元素</p>
+		<img src="./img/dn-36.png" alt="Tulip" style="width:20%" />
+		
+		<h1>左和右对齐 - 使用 position</h1>
+		<p>对齐元素的一种方法是使用 position: absolute;</p>
+		<p>绝对定位的元素将从正常流中删除，并可能出现元素重叠</p>
+		<div class="right">
+		  <p>在我更年轻，更脆弱的岁月中，父亲给了我一些建议，从那以后我就一直在思考。</p>
+		</div>
+		
+		<h1>左和右对齐 - 使用 float</h1>
+		<p>对齐元素的另一种方法是使用 float 属性</p>
+		<h1>左对齐</h1>
+		
+		<p>如何使用 float 属性将元素左对齐的例子：</p>
+		
+		<div class="left">
+		  <p>在我更年轻，更脆弱的岁月中，父亲给了我一些建议，从那以后我就一直在思考。</p>
+		</div>
+		<p style="clear: both">如果一个元素比包含它的元素高，并且它是浮动的，它将溢出其容器。您可以使用 clearfix hack 来解决此问题</p>
+	
+	<h1>Clearfix</h1>
+	
+	<p>在本例中，图像高于包含它的元素，然而它被浮动了，所以它会在容器之外溢出：</p>
+	
+	<div class="sdiv">
+	  <img class="img1" src="./img/dn-36.png" alt="W3School" width="180" height="167">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+	</div>
+	
+	<p style="clear:right">请为包含元素添加一个带有 overflow: auto; 的 clearfix 类，以解决此问题：</p>
+	
+	<div class="sdiv clearfix">
+	  <img class="img1" src="./img/dn-36.png" alt="W3School" width="180" height="167">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+	</div>
+	
+	<h1>垂直对齐 - 使用 padding</h1>
+	<div class="padding_center">
+	  <p>我是垂直居中的。</p>
+	</div>
+	<div class="padding_center2">
+	  <p>我是垂直和水平居中。</p>
+	</div>
+	</body>
+</html>
